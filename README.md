@@ -1,0 +1,2 @@
+# sifre-depolama
+sifre-depolama
