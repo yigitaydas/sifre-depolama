@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace sifre_depolama
 {
-    public partial class Form1 : Form
+    public partial class Anaform : Form
     {
-        public Form1()
+        public Anaform()
         {
             InitializeComponent();
+        }
+
+        private void Anaform_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

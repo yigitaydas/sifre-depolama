@@ -1,7 +1,7 @@
 ﻿
 namespace sifre_depolama
 {
-    partial class Form1
+    partial class Anaform
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,18 @@ namespace sifre_depolama
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Anaform
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Anaform";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Anaform_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
