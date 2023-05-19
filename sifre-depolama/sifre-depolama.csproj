@@ -52,6 +52,7 @@
     <Compile Include="Anaform.Designer.cs">
       <DependentUpon>Anaform.cs</DependentUpon>
     </Compile>
+    <Compile Include="CLS\mySstm.cs" />
     <Compile Include="CLS\SQLConnectionClass.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>

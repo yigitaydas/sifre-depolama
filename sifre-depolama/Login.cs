@@ -34,7 +34,7 @@ namespace sifre_depolama
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void bttn_cikis_Click(object sender, EventArgs e)

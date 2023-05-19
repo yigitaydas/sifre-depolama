@@ -14,9 +14,14 @@ namespace sifre_depolama
         [STAThread]
         static void Main()
         {
+
+
+            CLS.SQLConnectionClass.Baglanti();
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Anaform());
+            Application.Run(new Login());
         }
     }
 }

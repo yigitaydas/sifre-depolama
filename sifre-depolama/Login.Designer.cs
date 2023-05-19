@@ -42,9 +42,9 @@ namespace sifre_depolama
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(40, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Kullanıcı Adı:";
+            this.label1.Text = "Kullanıcı Kodu";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -52,9 +52,9 @@ namespace sifre_depolama
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(40, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Şifre:";
+            this.label2.Text = "Şifre";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txt_kullanici_adi
