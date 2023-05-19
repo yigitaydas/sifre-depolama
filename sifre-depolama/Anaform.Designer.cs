@@ -37,7 +37,7 @@ namespace sifre_depolama
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Anaform";
-            this.Text = "Form1";
+            this.Text = "Anaform";
             this.Load += new System.EventHandler(this.Anaform_Load);
             this.ResumeLayout(false);
 
