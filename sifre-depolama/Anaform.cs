@@ -125,7 +125,7 @@ namespace sifre_depolama
 
         private void btn_yeni_Click(object sender, EventArgs e)
         {
-           
+
 
         }
 
@@ -147,21 +147,24 @@ namespace sifre_depolama
 
 
 
-
-
-
-
+        void Temizle()
+        {
+            txt_id_numarasi.Text = "0";
+            txt_kul_adi.Text = "";
+            txt_sifre.Text = "";
+            txt_notlar.Text = "";
+            txt_site_adi.Text = "";
+            txt_site_url.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-         
-
-         }
-
+            Temizle();
+        }
 
 
 
-
+    }
 }
+
 
