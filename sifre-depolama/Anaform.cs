@@ -97,6 +97,7 @@ namespace sifre_depolama
         {
 
             MYMODELS.SIFRELER.SIFRE_Sil(Convert.ToInt32(txt_id_numarasi.Text));
+            Temizle();
 
 
             Grid_Doldur();
@@ -125,7 +126,7 @@ namespace sifre_depolama
 
         private void btn_yeni_Click(object sender, EventArgs e)
         {
-
+            txt_id_numarasi.Text = "0";
 
         }
 

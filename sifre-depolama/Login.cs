@@ -49,7 +49,7 @@ namespace sifre_depolama
             }
             else
             {
-                MessageBox.Show("bilgiler hatalı");
+                MessageBox.Show("Bilgiler Hatalı!");
 
 
 

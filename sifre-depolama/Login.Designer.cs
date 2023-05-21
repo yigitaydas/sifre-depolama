@@ -29,6 +29,7 @@ namespace sifre_depolama
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_kullanici_adi = new System.Windows.Forms.TextBox();
@@ -40,7 +41,7 @@ namespace sifre_depolama
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 56);
+            this.label1.Location = new System.Drawing.Point(12, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 0;
@@ -50,7 +51,7 @@ namespace sifre_depolama
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 124);
+            this.label2.Location = new System.Drawing.Point(12, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 1;
@@ -59,7 +60,7 @@ namespace sifre_depolama
             // 
             // txt_kullanici_adi
             // 
-            this.txt_kullanici_adi.Location = new System.Drawing.Point(125, 56);
+            this.txt_kullanici_adi.Location = new System.Drawing.Point(97, 30);
             this.txt_kullanici_adi.Name = "txt_kullanici_adi";
             this.txt_kullanici_adi.Size = new System.Drawing.Size(100, 20);
             this.txt_kullanici_adi.TabIndex = 2;
@@ -67,7 +68,7 @@ namespace sifre_depolama
             // 
             // txt_sifre
             // 
-            this.txt_sifre.Location = new System.Drawing.Point(125, 124);
+            this.txt_sifre.Location = new System.Drawing.Point(97, 98);
             this.txt_sifre.Name = "txt_sifre";
             this.txt_sifre.Size = new System.Drawing.Size(100, 20);
             this.txt_sifre.TabIndex = 3;
@@ -75,7 +76,7 @@ namespace sifre_depolama
             // 
             // btn_giris
             // 
-            this.btn_giris.Location = new System.Drawing.Point(125, 181);
+            this.btn_giris.Location = new System.Drawing.Point(97, 140);
             this.btn_giris.Name = "btn_giris";
             this.btn_giris.Size = new System.Drawing.Size(100, 23);
             this.btn_giris.TabIndex = 4;
@@ -85,11 +86,11 @@ namespace sifre_depolama
             // 
             // bttn_cikis
             // 
-            this.bttn_cikis.Location = new System.Drawing.Point(125, 219);
+            this.bttn_cikis.Location = new System.Drawing.Point(97, 169);
             this.bttn_cikis.Name = "bttn_cikis";
             this.bttn_cikis.Size = new System.Drawing.Size(100, 23);
             this.bttn_cikis.TabIndex = 5;
-            this.bttn_cikis.Text = "Çık";
+            this.bttn_cikis.Text = "Çıkış";
             this.bttn_cikis.UseVisualStyleBackColor = true;
             this.bttn_cikis.Click += new System.EventHandler(this.bttn_cikis_Click);
             // 
@@ -97,19 +98,22 @@ namespace sifre_depolama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 389);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(242, 216);
             this.Controls.Add(this.bttn_cikis);
             this.Controls.Add(this.btn_giris);
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_kullanici_adi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Giriş";
+            this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
