@@ -34,7 +34,25 @@ namespace sifre_depolama
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
+            DataTable dt = CLS.SQLConnectionClass.Table("select * from KULLANICILAR where kul_kod = '"+ txt_kullanici_adi.Text + "' and kul_pw= '" + txt_sifre.Text + "'");
+            if (dt.Rows.Count > 0 )
+            {
+
+
+                this.Hide();
+                new Anaform().ShowDialog();
+                
+            }
+            else
+            {
+                MessageBox.Show("bilgiler hatalı");
+
+
+
+            }
+        
+           
         }
 
         private void bttn_cikis_Click(object sender, EventArgs e)
