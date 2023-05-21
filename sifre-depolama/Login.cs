@@ -35,10 +35,13 @@ namespace sifre_depolama
         private void button1_Click(object sender, EventArgs e)
         {
 
-            DataTable dt = CLS.SQLConnectionClass.Table("select * from KULLANICILAR where kul_kod = '"+ txt_kullanici_adi.Text + "' and kul_pw= '" + txt_sifre.Text + "'");
+            DataTable dt = CLS.SQLConnectionClass.Table("select kul_ad from KULLANICILAR where kul_kod = '"+ txt_kullanici_adi.Text + "' and kul_pw= '" + txt_sifre.Text + "'");
             if (dt.Rows.Count > 0 )
             {
 
+                CLS.mySstm.Aktif_Kullanici_Adi = dt.Rows[0]["kul_ad"].ToString();
+
+                CLS.mySstm.Aktif_Kullanici_Kodu = txt_kullanici_adi.Text;
 
                 this.Hide();
                 new Anaform().ShowDialog();

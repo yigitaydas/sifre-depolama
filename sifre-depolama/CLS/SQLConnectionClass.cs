@@ -26,8 +26,8 @@ namespace sifre_depolama.CLS
         public static object Command(string query)
         {
             object obj;
-            com.Connection = con; // SqlCommand
-            com.CommandText = query; // SqlCommand
+            com.Connection = con;
+            com.CommandText = query;
             obj = com.ExecuteScalar();
             return obj;
         }
@@ -35,9 +35,9 @@ namespace sifre_depolama.CLS
         public static DataTable Table(string query)
         {
             DataTable dt = new DataTable();
-            com.Connection = con; // SqlCommand
-            com.CommandText = query; // SqlCommand
-            da.SelectCommand = com; // // SqlCommand'ın bir select sorgusu olduğunu belirtiyoruz.
+            com.Connection = con;
+            com.CommandText = query;
+            da.SelectCommand = com;
             da.Fill(dt);
             return dt;
         }

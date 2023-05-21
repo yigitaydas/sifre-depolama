@@ -13,8 +13,8 @@ namespace sifre_depolama.CLS
 
 
 
-        public int Aktif_Kullanici_Kodu { get; set; }
-        public int Aktif_Kullanici_Adi { get; set; }
+        public static string Aktif_Kullanici_Kodu { get; set; }
+        public static string Aktif_Kullanici_Adi { get; set; }
 
 
 

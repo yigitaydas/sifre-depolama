@@ -17,9 +17,151 @@ namespace sifre_depolama
             InitializeComponent();
         }
 
+
         private void Anaform_Load(object sender, EventArgs e)
+        {
+            txt_id_numarasi.Text = "0";
+            hoşgeldinizToolStripMenuItem.Text += CLS.mySstm.Aktif_Kullanici_Adi;
+            Grid_Doldur();
+        }
+
+
+        private void Grid_Doldur()
+        {
+            dataGridView1.DataSource = CLS.SQLConnectionClass.Table("select * from SIFRELER");
+
+
+        }
+
+
+        private void Anaform_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void hoşgeldinizToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
-    }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            MYMODELS.SIFRELER.SIFRE_Sil(Convert.ToInt32(txt_id_numarasi.Text));
+
+
+            Grid_Doldur();
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_kaydet_Click(object sender, EventArgs e)
+        {
+            MYMODELS.SIFRELER.SIFRE sif = new MYMODELS.SIFRELER.SIFRE()
+            {
+                sif_RECno = Convert.ToInt32(txt_id_numarasi.Text),
+                sif_kul_adi_mail = txt_kul_adi.Text,
+                sif_kul_sifre = txt_sifre.Text,
+                sif_notlar = txt_notlar.Text,
+                sif_site_adi = txt_site_adi.Text,
+                sif_site_url = txt_site_url.Text
+
+            };
+            txt_id_numarasi.Text = MYMODELS.SIFRELER.SIFRE_Kaydet(sif).ToString();
+            Grid_Doldur();
+        }
+
+        private void btn_yeni_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                txt_id_numarasi.Text = row.Cells["sif_RECno"].Value.ToString();
+                txt_kul_adi.Text = row.Cells["sif_kul_adi_mail"].Value.ToString();
+                txt_sifre.Text = row.Cells["sif_kul_sifre"].Value.ToString();
+                txt_notlar.Text = row.Cells["sif_notlar"].Value.ToString();
+                txt_site_adi.Text = row.Cells["sif_site_adi"].Value.ToString();
+                txt_site_url.Text = row.Cells["sif_site_url"].Value.ToString();
+            }
+        }
+
+
+
+
+
+
+
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
+
+         }
+
+
+
+
+
 }
+
