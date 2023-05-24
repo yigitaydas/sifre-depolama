@@ -42,7 +42,16 @@ namespace sifre_depolama
 
         private void Anaform_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            DialogResult x = MessageBox.Show("Programdan Çıkmak İstediğinizden Emin Misiniz?" +
+                "                   Kaydedilmemiş Bilgileriniz Silinebilir!", "Çıkış Yapıyorsunuz!", MessageBoxButtons.YesNo);
+            if (x == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+            else if (x == DialogResult.No)
+            {
+                e.Cancel = true; 
+            }
         }
 
         private void hoşgeldinizToolStripMenuItem_Click(object sender, EventArgs e)
@@ -174,6 +183,10 @@ namespace sifre_depolama
         {
                 
         }
+
+
+
+
     }
     }
 

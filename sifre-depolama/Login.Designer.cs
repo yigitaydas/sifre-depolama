@@ -100,6 +100,7 @@ namespace sifre_depolama
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(242, 216);
+            this.ControlBox = false;
             this.Controls.Add(this.bttn_cikis);
             this.Controls.Add(this.btn_giris);
             this.Controls.Add(this.txt_sifre);
@@ -113,6 +114,7 @@ namespace sifre_depolama
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
+            this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
