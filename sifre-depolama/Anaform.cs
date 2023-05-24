@@ -29,8 +29,6 @@ namespace sifre_depolama
         private void Grid_Doldur()
         {
             dataGridView1.DataSource = CLS.SQLConnectionClass.Table("select * from SIFRELER");
-
-
         }
 
 
@@ -42,10 +40,6 @@ namespace sifre_depolama
         private void hoşgeldinizToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -142,6 +136,8 @@ namespace sifre_depolama
                 txt_site_adi.Text = row.Cells["sif_site_adi"].Value.ToString();
                 txt_site_url.Text = row.Cells["sif_site_url"].Value.ToString();
             }
+
+
         }
 
 
@@ -163,9 +159,11 @@ namespace sifre_depolama
             Temizle();
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
 
-
+        }
     }
-}
+    }
 
 

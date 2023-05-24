@@ -63,7 +63,7 @@ namespace sifre_depolama
             this.hoşgeldinizToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1158, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1171, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -76,6 +76,7 @@ namespace sifre_depolama
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox1.Controls.Add(this.btn_temizle);
             this.groupBox1.Controls.Add(this.btn_yeni);
             this.groupBox1.Controls.Add(this.txt_id_numarasi);
@@ -95,7 +96,7 @@ namespace sifre_depolama
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1158, 299);
+            this.groupBox1.Size = new System.Drawing.Size(1171, 299);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kayıt";
@@ -138,6 +139,7 @@ namespace sifre_depolama
             this.label6.Size = new System.Drawing.Size(72, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "ID numarası : ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // btn_sil
             // 
@@ -177,7 +179,7 @@ namespace sifre_depolama
             // 
             // txt_sifre
             // 
-            this.txt_sifre.Location = new System.Drawing.Point(482, 93);
+            this.txt_sifre.Location = new System.Drawing.Point(452, 93);
             this.txt_sifre.Name = "txt_sifre";
             this.txt_sifre.Size = new System.Drawing.Size(225, 20);
             this.txt_sifre.TabIndex = 7;
@@ -192,7 +194,7 @@ namespace sifre_depolama
             // 
             // txt_site_adi
             // 
-            this.txt_site_adi.Location = new System.Drawing.Point(482, 54);
+            this.txt_site_adi.Location = new System.Drawing.Point(452, 54);
             this.txt_site_adi.Name = "txt_site_adi";
             this.txt_site_adi.Size = new System.Drawing.Size(225, 20);
             this.txt_site_adi.TabIndex = 5;
@@ -200,7 +202,7 @@ namespace sifre_depolama
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(772, 157);
+            this.label5.Location = new System.Drawing.Point(772, 100);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 4;
@@ -249,11 +251,12 @@ namespace sifre_depolama
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 323);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1158, 406);
+            this.groupBox2.Size = new System.Drawing.Size(1171, 406);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Liste";
@@ -261,12 +264,12 @@ namespace sifre_depolama
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 16);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1152, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(1165, 387);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -274,8 +277,8 @@ namespace sifre_depolama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1158, 729);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(1171, 729);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
