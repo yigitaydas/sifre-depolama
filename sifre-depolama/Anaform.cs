@@ -37,6 +37,7 @@ namespace sifre_depolama
             dataGridView1.Columns[5].HeaderText = "Notlar";
             dataGridView1.Columns[6].HeaderText = "Kayıt Etme Tarihi ve Saati";
             dataGridView1.Columns[7].HeaderText = "Güncelleme Tarihi ve Saati";
+
         }
 
 
@@ -152,10 +153,12 @@ namespace sifre_depolama
                 txt_site_url.Text = row.Cells["sif_site_url"].Value.ToString();
             }
 
+            
+
 
         }
 
-
+      
 
 
 
