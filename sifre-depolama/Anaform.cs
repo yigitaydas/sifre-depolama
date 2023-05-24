@@ -29,6 +29,14 @@ namespace sifre_depolama
         private void Grid_Doldur()
         {
             dataGridView1.DataSource = CLS.SQLConnectionClass.Table("select * from SIFRELER");
+            dataGridView1.Columns[0].HeaderText = "Kayıt No";
+            dataGridView1.Columns[1].HeaderText = "Site Adı";
+            dataGridView1.Columns[2].HeaderText = "Site URL";
+            dataGridView1.Columns[3].HeaderText = "Kullanıcı Adı veya Mail";
+            dataGridView1.Columns[4].HeaderText = "Şifre";
+            dataGridView1.Columns[5].HeaderText = "Notlar";
+            dataGridView1.Columns[6].HeaderText = "Kayıt Etme Tarihi ve Saati";
+            dataGridView1.Columns[7].HeaderText = "Güncelleme Tarihi ve Saati";
         }
 
 
@@ -92,8 +100,6 @@ namespace sifre_depolama
 
             MYMODELS.SIFRELER.SIFRE_Sil(Convert.ToInt32(txt_id_numarasi.Text));
             Temizle();
-
-
             Grid_Doldur();
         }
 
@@ -162,6 +168,11 @@ namespace sifre_depolama
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+                
         }
     }
     }

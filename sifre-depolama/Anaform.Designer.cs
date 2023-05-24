@@ -138,7 +138,7 @@ namespace sifre_depolama
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 13);
             this.label6.TabIndex = 12;
-            this.label6.Text = "ID numarası : ";
+            this.label6.Text = "Kayıt No : ";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // btn_sil
@@ -272,6 +272,7 @@ namespace sifre_depolama
             this.dataGridView1.Size = new System.Drawing.Size(1165, 387);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Anaform
             // 
