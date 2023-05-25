@@ -19,7 +19,5 @@ namespace sifre_depolama.CLS
 
 
 
-
-
     }
 }

@@ -66,5 +66,21 @@ namespace sifre_depolama.MYMODELS
             MessageBox.Show("Silme Başarılı");
 
         }
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        
     }
 }

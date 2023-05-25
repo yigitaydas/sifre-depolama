@@ -38,6 +38,7 @@ namespace sifre_depolama
             dataGridView1.Columns[6].HeaderText = "Kayıt Etme Tarihi ve Saati";
             dataGridView1.Columns[7].HeaderText = "Güncelleme Tarihi ve Saati";
 
+           
         }
 
 
@@ -127,11 +128,13 @@ namespace sifre_depolama
                 sif_kul_sifre = txt_sifre.Text,
                 sif_notlar = txt_notlar.Text,
                 sif_site_adi = txt_site_adi.Text,
-                sif_site_url = txt_site_url.Text
-
-            };
+                sif_site_url = txt_site_url.Text,
+             };
             txt_id_numarasi.Text = MYMODELS.SIFRELER.SIFRE_Kaydet(sif).ToString();
             Grid_Doldur();
+
+
+            
         }
 
         private void btn_yeni_Click(object sender, EventArgs e)
@@ -151,9 +154,12 @@ namespace sifre_depolama
                 txt_notlar.Text = row.Cells["sif_notlar"].Value.ToString();
                 txt_site_adi.Text = row.Cells["sif_site_adi"].Value.ToString();
                 txt_site_url.Text = row.Cells["sif_site_url"].Value.ToString();
+
+
+                
             }
 
-            
+
 
 
         }
