@@ -113,7 +113,7 @@ namespace sifre_depolama
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(221, 362);
+            this.ClientSize = new System.Drawing.Size(221, 277);
             this.ControlBox = false;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bttn_cikis);
