@@ -14,6 +14,7 @@ namespace sifre_depolama.CLS
         private static SqlDataAdapter da = new SqlDataAdapter();
         private static SqlCommand com = new SqlCommand();
 
+
         public static void Baglanti()
         {
             con = new SqlConnection(SQLConnectionString);
