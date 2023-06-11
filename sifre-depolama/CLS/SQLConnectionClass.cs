@@ -9,7 +9,7 @@ namespace sifre_depolama.CLS
 {
     public class SQLConnectionClass
     {
-        private static string SQLConnectionString = @"Server = DESKTOP-I3BSAHV\SQLEXPRESS ; Database = sifre-depolama; Trusted_Connection = True;";
+        private static string SQLConnectionString = @"Server = DESKTOP-DQ2875K\SQLEXPRESS ; Database = sifre-depolama; Trusted_Connection = True;";
         private static SqlConnection con = new SqlConnection();
         private static SqlDataAdapter da = new SqlDataAdapter();
         private static SqlCommand com = new SqlCommand();
