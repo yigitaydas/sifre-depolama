@@ -153,12 +153,13 @@ namespace sifre_depolama
             // 
             // btn_kaydet
             // 
+            this.btn_kaydet.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_kaydet.Location = new System.Drawing.Point(890, 239);
             this.btn_kaydet.Name = "btn_kaydet";
             this.btn_kaydet.Size = new System.Drawing.Size(63, 23);
             this.btn_kaydet.TabIndex = 10;
             this.btn_kaydet.Text = "Kaydet";
-            this.btn_kaydet.UseVisualStyleBackColor = true;
+            this.btn_kaydet.UseVisualStyleBackColor = false;
             this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
             // txt_site_url
